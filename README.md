@@ -1,8 +1,8 @@
 # splunk-siem-lab
 Created a splunk dashboard showing failed logins and activity
-# 🔐 Splunk SIEM SOC Lab – Attack Simulation & Detection
+#  Splunk SIEM SOC Lab – Attack Simulation & Detection
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates a hands-on cybersecurity home lab where I built a small **Security Operations Center (SOC)** environment using Splunk. I simulated real-world attacks from a Kali Linux machine and detected them using centralized log collection, dashboards, and alerts.
 
@@ -15,7 +15,7 @@ The goal of this lab was to gain practical experience in:
 
 ---
 
-## 🧱 Lab Architecture
+##  Lab Architecture
 
 ```
 Kali Linux (Attacker)
@@ -32,7 +32,7 @@ Splunk Enterprise SIEM (Windows 10)
 
 ---
 
-## ⚙️ Setup & Configuration
+## Setup & Configuration
 
 ### Splunk SIEM
 
@@ -54,21 +54,21 @@ Splunk Enterprise SIEM (Windows 10)
 
 ---
 
-## ⚔️ Attack Simulation
+##  Attack Simulation
 
 I simulated a realistic attack chain from Kali Linux:
 
-### 🔑 Brute Force Login Attempts
+###  Brute Force Login Attempts
 
 * Generated multiple failed login attempts
 * Detected via Event ID **4625**
 
-### ⚡ PowerShell Execution
+###  PowerShell Execution
 
 * Executed commands (`whoami`, `ipconfig`, remote script execution)
 * Captured using PowerShell logging
 
-### 🔍 Reconnaissance (Discovery)
+###  Reconnaissance (Discovery)
 
 * Enumerated system information:
 
@@ -76,7 +76,7 @@ I simulated a realistic attack chain from Kali Linux:
   * `net localgroup administrators`
 * Simulated attacker discovery phase
 
-### 👤 Persistence (Account Creation)
+###  Persistence (Account Creation)
 
 ```
 net user hacker Pass123! /add
@@ -86,7 +86,7 @@ net user hacker Pass123! /add
 
 ---
 
-## 🔎 Detection & SPL Queries
+##  Detection & SPL Queries
 
 ### Failed Login Detection
 
@@ -139,7 +139,7 @@ This dashboard provides real-time visibility into attacker behavior and system a
 
 ---
 
-## 🚨 Alerting
+##  Alerting
 
 ### Brute Force Detection Alert
 
@@ -149,7 +149,7 @@ This dashboard provides real-time visibility into attacker behavior and system a
 
 ---
 
-## 🔍 Investigation Workflow
+##  Investigation Workflow
 
 Example investigation process:
 
@@ -161,7 +161,7 @@ Example investigation process:
 
 ---
 
-## 🧠 MITRE ATT&CK Mapping
+##  MITRE ATT&CK Mapping
 
 | Tactic         | Technique           | ID    |
 | -------------- | ------------------- | ----- |
@@ -172,7 +172,7 @@ Example investigation process:
 
 ---
 
-## 🛠 Skills Demonstrated
+##  Skills Demonstrated
 
 * SIEM configuration (Splunk Enterprise)
 * Log ingestion & forwarder setup
@@ -185,7 +185,7 @@ Example investigation process:
 
 ---
 
-## ⚠️ Challenges & Lessons Learned
+##  Challenges & Lessons Learned
 
 * Resolved log ingestion issues caused by incorrect index configuration
 * Fixed forwarder authentication errors (default credentials restriction)
@@ -194,7 +194,7 @@ Example investigation process:
 
 ---
 
-## 🚀 Conclusion
+##  Conclusion
 
 This lab simulates a real-world SOC workflow by combining attack simulation, detection engineering, and incident response. It demonstrates practical, hands-on cybersecurity skills relevant to entry-level SOC and security analyst roles.
 
